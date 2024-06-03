@@ -78,6 +78,10 @@ body h1 {
     .right-column {
         order: 2;
     }
+    .right-column img {
+    max-width: 1200px;
+    height:500px;
+    border-radius: 10px;
 
     .left-column h1 {
         font-size: 2em;
