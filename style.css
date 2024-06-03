@@ -90,6 +90,8 @@ body h1 {
 
     .left-column p {
         font-size: 1em;
+        text-align:center;
+        
     }
     .footer {
         text-align: center;
