@@ -81,6 +81,7 @@ img {
     width: 390px;
     height: auto;
     border-radius: 10px;
+    align-items: center;
 }
 
 /* Video styles */
