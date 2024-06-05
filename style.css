@@ -36,7 +36,7 @@ p {
 
 .left-column, .right-column, .left-column1, .right-column1, .left-column2, .right-column2, .left-column3, .right-column3 {
     flex: 1;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
