@@ -101,6 +101,10 @@ video {
         flex-direction: column;
     }
 
+    .container3 {
+        order: -1; /* Make container3 appear first */
+    }
+
     h1 {
         font-size: 28px;
     }
