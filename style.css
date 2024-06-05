@@ -22,91 +22,44 @@ p {
     font-weight: 800;
 }
 
+img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 /* Container styles */
 .container1, .container2, .container3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
-    background-color: #ecf0f1;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.left-column, .right-column, .left-column1, .right-column1, .left-column2, .right-column2, .left-column3, .right-column3 {
+.left-column1, .left-column2, .left-column3, .left-column4, .left-column5, .left-column6,
+.right-column2, .right-column3, .right-column5, .right-column6 {
     flex: 1;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-.left-column {
-    order: 2;
-}
-
-.right-column {
-    order: 1;
+.right-column2, .right-column3, .right-column5, .right-column6 {
     text-align: center;
     font-weight: 800;
 }
 
-.left-column1 {
-    order: 1;
-}
-
-.right-column1 {
-    order: 2;
-    text-align: center;
-}
-
-.left-column2 {
-    order: 2;
-    text-align: center;
-}
-
-.right-column2 {
-    order: 1;
-}
-
-.left-column3 {
-    order: 1;
-}
-
-.right-column3 {
-    order: 2;
-    text-align: center;
-}
-
-img {
-    width: 390px;
-    height: auto;
-    border-radius: 10px;
-    align-items: center;
-}
-
-/* Video styles */
-video {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .left-column, .right-column, .left-column1, .right-column1, .left-column2, .right-column2, .left-column3, .right-column3 {
-        flex: 100%;
-        order: 0;
-        padding : 5px;
-    }
-
+@media (min-width: 769px) and (max-width: 1024px) {
     .container1, .container2, .container3 {
         flex-direction: column;
+        align-items: center;
+        max-width: 768px;
     }
+}
 
-    .container3 {
-        order: -1; /* Make container3 appear first */
-    }
-
+@media (max-width: 768px) {
     h1 {
         font-size: 28px;
     }
@@ -114,12 +67,27 @@ video {
     p {
         font-size: 14px;
         font-weight: bold;
+        text-align: center;
     }
 
-    img, video {
-        width: 100%;
-        height: auto;
+    .container1, .container2, .container3 {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
     }
-   
+
+    /* CSS for uniform alignment and centering */
+.left-column1, .left-column2, .left-column4, .left-column3,  .left-column5, .left-column6,
+.right-column2, .right-column3, .right-column5, .right-column6 {
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center; /* Center align text */
 }
+
+.left-column1 p, .left-column2 p, .left-column3 p, .left-column4 p, .left-column5 p, .left-column6 p,
+.right-column2 p, .right-column3 p, .right-column5 p, .right-column6 p {
+    width: 100%; /* Set the width to 100% */
+    margin: 0 ; /* Center align text */
+}
+
 }
