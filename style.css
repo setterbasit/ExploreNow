@@ -96,6 +96,7 @@ video {
     .left-column, .right-column, .left-column1, .right-column1, .left-column2, .right-column2, .left-column3, .right-column3 {
         flex: 100%;
         order: 0;
+        padding : 5px;
     }
 
     .container1, .container2, .container3 {
